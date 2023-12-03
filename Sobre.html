@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReUseCup - Eventos</title>
+    <link rel= "stylesheet" href="index.css">
+    <style>
+        nav ul li a {
+            transition: color 0.50s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #4CAF50; / Muda de cor ao passar o mouse
+        }
+       .clickable {
+            cursor: pointer;
+            color: #4CAF50;
+            transition: color 0.50s ease-in-out;
+        }
+        .clickable:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+            <li>
+                <a href="Sobre.html">Nossa empresa</a>
+            </li>
+            <li>
+                <a href="Serviços.html">Adote um copo</a>
+            </li>
+            <li>
+                <a href="Novidades.html">Novidades</a>
+            </li>
+            <li>
+                <a href="Contatos.html">Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+
+        <header>
+            <div class="center">
+                <h1>Nossa História</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="container">
+                    <p class="clickable" id="textoMudar">Na ReUseCup, estamos comprometidos com um futuro mais sustentável e consciente...</p>
+                    <h1>Fundação da ReuseCup</h1>
+
+                    <p>ReuseCup nasceu de uma visão compartilhada por um grupo de entusiastas da sustentabilidade que buscavam uma maneira inovadora de abordar a questão dos resíduos plásticos. Fundada em 2017 na ensolarada cidade costeira do Rio de Janeiro, a empresa foi fruto da colaboração entre três amigos - Roberta, Pedro e Jessica - unidos por uma paixão em comum: a preservação do meio ambiente.</p>
+                    
+                    <h1>Os Proprietários</h1>
+                    
+                    <p>Roberta, uma ativista ambiental apaixonada, trouxe sua experiência em projetos de conscientização ecológica. Pedro, um engenheiro visionário, desenvolveu a tecnologia por trás dos materiais sustentáveis utilizados nos produtos ReuseCup. Jessica, com um histórico em design inovador, trouxe elegância e funcionalidade aos copos reutilizáveis da empresa.</p>
+                    
+                    <h1>Objetivo da Empresa</h1>
+
+                    <p>O objetivo principal da ReuseCup é proporcionar uma mudança tangível e duradoura na mentalidade de consumo. A empresa se compromete a oferecer alternativas sustentáveis ao plástico de uso único, começando pelos copos reutilizáveis. A missão é clara: diminuir a pegada de plástico no planeta, um copo de cada vez. A ReuseCup acredita que cada escolha consciente feita por indivíduos se traduz em um impacto positivo no mundo, e busca tornar essa escolha acessível e conveniente para todos.  
+                    um compromisso inabalável com a inovação e a qualidade, a ReuseCup não se limita apenas a produzir copos reutilizáveis, mas aspira a inspirar uma mudança de mentalidade, encorajando hábitos de consumo mais responsáveis e contribuindo para um futuro mais limpo e sustentável para as gerações vindouras.</p>
+                </div>
+            </section>
+        </main>
+        <script>
+            // Função para alterar o estilo do texto ao ser clicado
+            document.getElementById('textoMudar').addEventListener('click', function() {
+                this.style.fontWeight = 'bold'; // Altera o peso da fonte ao ser clicado
+                this.style.color = 'green'; // Altera a cor do texto ao ser clicado
+                this.style.textDecoration = 'none'; // Remove sublinhado ao ser clicado
+            });
+        </script>
+        <footer>
+            <div class="center">
+                <p>&copy; 2023 ReUseCup</p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

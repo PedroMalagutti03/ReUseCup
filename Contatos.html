@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - ReUseCup</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        nav ul li a {
+            transition: color 0.50s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50; /* Muda de cor ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="Sobre.html">Nossa empresa</a>
+                </li>
+                <li>
+                    <a href="Serviços.html">Adote um copo</a>
+                </li>
+                <li>
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li>
+                    <a href="Contatos.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; }
+        .content { display: flex; justify-content: center; }
+        .contato { width: 100%; max-width: 500px; }
+        .form { display: flex; flex-direction: column; }
+        .field { padding: 10px; margin-bottom: 15px; border: 1px solid #DDD; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+        textarea { height: 150px; }
+        /* Adicione a regra para o botão Enviar */
+        input[type="submit"] {
+            background-color: #4CAF50; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            padding: 10px 15px; /* Espaçamento interno */
+            border: none; /* Remove a borda */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Ícone de cursor de ponteiro */
+        }
+        /* Estilos para o botão quando passa o mouse */
+        input[type="submit"]:hover {
+            background-color: #4CAF50; /* Altera a cor quando o mouse passa por cima */
+        }
+    </style>
+
+    <section class="content">
+        <div class="contato">
+            <h3>Formulário de contato</h3>
+            <form class="form" method="POST" action="./email.php">
+                <input class="field" name="nome" placeholder="Nome">
+                <input class="field" name="email" placeholder="E-mail">
+                <textarea class="field" name="mensagem" placeholder="Digite sua mensagem aqui."></textarea>
+                <input class="field" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            <p>&copy; 2023 ReUseCup</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

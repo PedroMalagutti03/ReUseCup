@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - ReUseCup</title>
+    <link rel= "stylesheet" href="index.css">
+    <style>
+        nav ul li a {
+            transition: color 0.50s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #4CAF50; /* Muda de cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="Sobre.html">Nossa empresa</a>
+                </li>
+                <li>
+                    <a href="Serviços.html">Adote um copo</a>
+                </li>
+                <li>
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li>
+                    <a href="Contatos.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="center">
+                <img src="./img/logo.png" alt="Logo ReUseCup">
+                <h1>
+                    <span class="estilizado">ReUseCup</span>
+                </h1>
+                <h2>
+                    Bem-vindo à ReUseCup: Redefinindo o Futuro, Um Copo de Cada Vez.
+                </h2>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="container">
+                    <p>Na ReUseCup, estamos comprometidos com um futuro mais sustentável e consciente. Somos impulsionados por uma paixão inabalável por reduzir resíduos e criar um impacto positivo no mundo. Nossa missão é simples: revolucionar a maneira como as pessoas consomem, começando por algo tão cotidiano quanto um copo.</p>
+                    
+                    <p>Acreditamos que cada ação, por menor que seja, contribui para um futuro mais verde. É por isso que nos dedicamos a fornecer soluções inovadoras e acessíveis de copos reutilizáveis. Não se trata apenas de um recipiente, mas sim de um símbolo de mudança.</p>
+                    
+                    <p>Nossos copos são mais do que uma alternativa conveniente - são uma declaração de compromisso com o planeta. Com designs ergonômicos, materiais sustentáveis e durabilidade excepcional, cada ReUseCup é uma escolha consciente para um estilo de vida mais ecológico.</p>
+                    
+                    <p>Na ReUseCup, acreditamos que os pequenos hábitos podem gerar grandes impactos. Junte-se a nós nessa jornada em direção a um amanhã mais limpo, mais brilhante e mais sustentável. Juntos, podemos fazer a diferença, um copo de cada vez.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="./img/facebook.svg" alt="Facebook">
+                <p>Facebook</p>
+            </a>
+
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="./img/instagram.svg" alt="Instagram">
+                <p>Instagram</p>
+            </a>
+
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="./img/LinkedIn.svg" alt="LinkedIn">
+                <p>Linkedin</p>
+            </a>
+
+        </footer>
+    </div>
+    <div class="center">
+        <p>&copy; 2023 ReUseCup</p>
+    </div>
+    <script>
+        // Função para alterar o estilo do texto ao ser clicado
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.estilizado').addEventListener('click', function() {
+                this.style.fontWeight = 'bold'; // Altera o peso da fonte ao ser clicado
+                this.style.color = 'green'; // Altera a cor do texto ao ser clicado
+                this.style.textDecoration = 'none'; // Remove sublinhado ao ser clicado
+            });
+        });
+    </script>
+</body>
+</html>
